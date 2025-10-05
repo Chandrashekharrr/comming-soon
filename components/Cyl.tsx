@@ -10,8 +10,8 @@ import { useFrame } from '@react-three/fiber';
 export default function Cyl() {
   const texture = useTexture("/images/vector.png");
 
-  let cyl = useRef<THREE.Mesh>(null);
-  
+  const cyl = useRef<THREE.Mesh>(null);
+
   useFrame((state, delta) => {
     
       cyl.current.rotation.y += delta;
