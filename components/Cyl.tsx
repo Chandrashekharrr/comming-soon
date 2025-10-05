@@ -13,8 +13,12 @@ export default function Cyl() {
   const cyl = useRef<THREE.Mesh>(null);
 
   useFrame((state, delta) => {
-    
+
+    if(cyl.current){
+
       cyl.current.rotation.y += delta;
+    }
+    
     
   });
 
