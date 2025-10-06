@@ -39,7 +39,7 @@ export default function Home() {
 
     if (dot.current) {
 
-      let split = SplitText.create(dot.current, { type: "chars" });
+      const split = SplitText.create(dot.current, { type: "chars" });
 
 
 
@@ -100,7 +100,7 @@ export default function Home() {
 
       <h1 className={`${notable.className} text-white text-[7vw] uppercase leading-none z-50 fixed bottom-10 right-10`}>Opening<br /> soon <span ref={dot}>....</span></h1>
       <h1 className='text-white fixed bottom-10 left-10 text-[4vw] md:text-[1.5vw]'> {time}</h1>
-      
+
 
 
     </>
